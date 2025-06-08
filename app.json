@@ -1,6 +1,6 @@
 {
-  "name": "LUCKY-MD-XFORCE MULT DEVICE",
-  "description": "LUCKY-MD-⁠XFORCE Whatsapp device bot made by FrediEzra to help Whatsapp users to enjoy while helping...",
+  "name": "gangsta ",
+  "description": "LUCKY-MD-⁠XFORCE Whatsapp device bot made by gangsta to help Whatsapp users to enjoy while helping...",
   "keywords": [
     "bot",
     "node",
@@ -22,7 +22,7 @@
       "value": "yes",
       "required": false
     },
-      "AUDIO_REPLY":
+      "AUDIO_REPLY":yes
     {
       "description":"Enter yes for your bot to auto reply audio in all chats",
       "value":"yes",
