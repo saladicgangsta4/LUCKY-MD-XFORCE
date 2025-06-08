@@ -27,7 +27,7 @@ ezra({ nomCom: "bible-list", categorie: "Fredi-Menu" }, async (dest, zk, command
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault("Africa/Dar Es Salam");
+    moment.tz.setDefault("Africa/Dodoma");
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');

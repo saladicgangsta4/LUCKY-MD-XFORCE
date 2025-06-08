@@ -84,7 +84,7 @@ ezra({
     const imdbData = response.data;
 
     let imdbInfo = "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n";
-    imdbInfo += " ``` lMDB SEARCH BY ☢️ LUCKY MD XFORCE```\n";
+    imdbInfo += " ``` lMDB SEARCH BY LUCKY MD XFORCE```\n";
     imdbInfo += "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n";
     imdbInfo += "🎬Title    : " + imdbData.Title + "\n";
     imdbInfo += "📅year      : " + imdbData.Year + "\n";
@@ -148,7 +148,7 @@ ezra({
       // Si la requête a réussi, envoyez l'image résultante
       
       let stickerMess = new Sticker(response.data.result, {
-        pack: ☢️LUCKY-MD XFORCE☢️,
+        pack: "LUCKY MD XFORCE",
         type: StickerTypes.CROPPED,
         categories: ["🤩", "🎉"],
         id: "12345",

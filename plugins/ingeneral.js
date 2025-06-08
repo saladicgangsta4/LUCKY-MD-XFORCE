@@ -39,7 +39,7 @@ ezra({
 ezra({
   nomCom: "bible",
   reaction: '📖',
-  categorie: "Fredi-New"
+  categorie: "God"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
   const reference = arg.join(" ");
@@ -159,7 +159,7 @@ ezra({
 });
 
 ezra({
-  nomCom: "paircode",
+  nomCom: "pair",
   aliases: ["session", "qrcode"],
   reaction: '🚀',
   categorie: 'General-Fredi'

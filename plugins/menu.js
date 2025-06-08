@@ -44,7 +44,7 @@ ezra({
         coms[com.categorie].push(com.nomCom);
     });
 
-    moment.tz.setDefault("Africa/Dar_es_Salaam");
+    moment.tz.setDefault("Africa/Dar_Es_Salam");
     const hour = moment().hour();
     let greeting = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ";
     if (hour >= 12 && hour < 18) greeting = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ!";
@@ -53,32 +53,32 @@ ezra({
 
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const img = 'https://files.catbox.moe/3o37c5.jpeg';
-    const imgs = 'https://files.catbox.moe/uw4l17.jpeg';
+    const img = 'https://files.catbox.moe/5x1y2z.png';
+    const imgs = 'https://files.catbox.moe/5x1y2z.png';
 
     const infoMsg = `
-╭┈┈┈┈━⊷
-*┋* *ʙᴏᴛ ɴᴀᴍᴇ :*  *☢️LUCKY MD X-FORCE☢️*
+╭───────────⊷
+*┋* *ʙᴏᴛ ɴᴀᴍᴇ :  ☢️LUCKY MD X-FORCE☢️*
 *┋* *ᴘʀᴇғɪx :* [ ${s.PREFIXE} ]
 *┋* *ᴍᴏᴅᴇ :* ${mode}
 *┋* *ᴅᴀᴛᴇ  :* ${date}
 *┋* *ᴘʟᴀᴛғᴏʀᴍ :* ${os.platform()}
 *┋* *ᴏᴡɴᴇʀ ɪs : FREDI*
 *┋* *ᴘʟᴜɢɪɴs ᴄᴍᴅ :* ${cm.length}
-╰┈┈┈┈━⊷\n`;
+╰───────────⊷\n`;
     
     let menuMsg = ` *${greeting}*`;
     
     for (const cat in coms) {
         menuMsg += `
 *「 ${toFancyUppercaseFont(cat)} 」*
-╭─━⊷ `;
+╭───┈┈┈┈────⊷ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
 *┋* ${toFancyLowercaseFont(cmd)}`;   
         }
         menuMsg += `
-╰─━⊷`;
+╰───┈┈┈┈────⊷`;
     }
     
     menuMsg += `
@@ -86,7 +86,7 @@ ezra({
 
     try {
         await zk.sendMessage(dest, { 
-            image: { url: img },
+            image: { url: "https://files.catbox.moe/uw4l17.jpeg" },
             caption: infoMsg + menuMsg,
             contextInfo: {
                 isForwarded: true,
@@ -98,8 +98,8 @@ ezra({
                 forwardingScore: 999,
                 externalAdReply: {
                     title: "☢️LUCKY MD X-FORCE☢️",
-                    body: "🗡️FredieTech Commands List",
-                    thumbnailUrl: imgs,
+                    body: "🔑🗝️ Command List",
+                    thumbnailUrl: "https://files.catbox.moe/3o37c5.jpeg",
                     sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
                     mediaType: 1,
                     renderLargerThumbnail: true

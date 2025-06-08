@@ -171,7 +171,7 @@ ezra(
 ezra(
     {
       nomCom: 'smooth',
-      categorie: 'Fredi-Audio-Edit',
+      categorie: 'Frefi-Audio-Edit',
     },
     async (dest, zk, commandeOptions) => {
       const { ms, repondre, msgRepondu } = commandeOptions;
